@@ -20,7 +20,7 @@
         <link href="_normalize.css" rel="stylesheet">
         <link href="style/app.css" rel="stylesheet">
 
-        <script type="module" src="../js/front/app.js"></script>
+        <script type="module" src="dist/index.js"></script>
     </head>
     <body>
 
@@ -29,51 +29,15 @@
         </header>
         <main>
             <aside>
-                <div class="Profile">
-                    <div class="Profile-picture">
-                        <img>
-                            <picture>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>account-outline</title><path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,6A2,2 0 0,0 10,8A2,2 0 0,0 12,10A2,2 0 0,0 14,8A2,2 0 0,0 12,6M12,13C14.67,13 20,14.33 20,17V20H4V17C4,14.33 9.33,13 12,13M12,14.9C9.03,14.9 5.9,16.36 5.9,17V18.1H18.1V17C18.1,16.36 14.97,14.9 12,14.9Z" /></svg>
-                            </picture>
-                        </img>
-                    </div>
-                    <div class="Profile-username">
-                        <h3>Usuario</h3>
-                    </div>
-                </div>
-                <div class="Nav">
-                    <div class="Nav-line">
-                        <h3>Contrato</h3>
-                    </div>
-                    <div class="Nav-line">
-                        <h3>Convenio</h3>
-                    </div>
-                    <div class="Nav-line">
-                        <h3>Estadísticas</h3>
-                    </div>
-                </div>
-                <div class="Settings-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>cog</title><path d="M12,15.5A3.5,3.5 0 0,1 8.5,12A3.5,3.5 0 0,1 12,8.5A3.5,3.5 0 0,1 15.5,12A3.5,3.5 0 0,1 12,15.5M19.43,12.97C19.47,12.65 19.5,12.33 19.5,12C19.5,11.67 19.47,11.34 19.43,11L21.54,9.37C21.73,9.22 21.78,8.95 21.66,8.73L19.66,5.27C19.54,5.05 19.27,4.96 19.05,5.05L16.56,6.05C16.04,5.66 15.5,5.32 14.87,5.07L14.5,2.42C14.46,2.18 14.25,2 14,2H10C9.75,2 9.54,2.18 9.5,2.42L9.13,5.07C8.5,5.32 7.96,5.66 7.44,6.05L4.95,5.05C4.73,4.96 4.46,5.05 4.34,5.27L2.34,8.73C2.21,8.95 2.27,9.22 2.46,9.37L4.57,11C4.53,11.34 4.5,11.67 4.5,12C4.5,12.33 4.53,12.65 4.57,12.97L2.46,14.63C2.27,14.78 2.21,15.05 2.34,15.27L4.34,18.73C4.46,18.95 4.73,19.03 4.95,18.95L7.44,17.94C7.96,18.34 8.5,18.68 9.13,18.93L9.5,21.58C9.54,21.82 9.75,22 10,22H14C14.25,22 14.46,21.82 14.5,21.58L14.87,18.93C15.5,18.67 16.04,18.34 16.56,17.94L19.05,18.95C19.27,19.03 19.54,18.95 19.66,18.73L21.66,15.27C21.78,15.05 21.73,14.78 21.54,14.63L19.43,12.97Z" /></svg>
-                </div>
+                <profile-component>
+                </profile-component>
+                <nav-components>
+                </nav-components>
+                <settings-component>
+                </settings-component>
             </aside>
-            <div class="Chat">
-                <div class="Chat-box"></div>
-                <div class="Chat-menu">
-                    <div class="Image-button">
-                        <button>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>image-plus-outline</title><path d="M13 19C13 19.7 13.13 20.37 13.35 21H5C3.9 21 3 20.11 3 19V5C3 3.9 3.9 3 5 3H19C20.11 3 21 3.9 21 5V13.35C20.37 13.13 19.7 13 19 13V5H5V19H13M13.96 12.29L11.21 15.83L9.25 13.47L6.5 17H13.35C13.75 15.88 14.47 14.91 15.4 14.21L13.96 12.29M20 18V15H18V18H15V20H18V23H20V20H23V18H20Z" /></svg>
-                        </button>
-                    </div>
-                    <div class="Text-bar">
-                        <input></input>
-                    </div>
-                    <div class="Send-button">
-                        <button>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>send-variant</title><path d="M3 20V14L11 12L3 10V4L22 12Z" /></svg>
-                        </button>
-                    </div>
-                </div>
-            </div>
+            <chat-component>
+            </chat-component>
         </main>       
         <footer>
         </footer>
