@@ -9,7 +9,7 @@ class Chat extends HTMLElement {
     render() {
 
         this.shadow.innerHTML = 
-        html`
+        /*html*/`
         <style>
             .Chat{
                 width:74%;
@@ -100,7 +100,7 @@ class Chat extends HTMLElement {
                     </button>
                 </div>
                 <div class="Text-bar">
-                    <input></input>
+                    <input>
                 </div>
                 <div class="Send-button">
                     <button>

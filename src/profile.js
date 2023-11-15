@@ -9,7 +9,7 @@ class Profile extends HTMLElement {
     render() {
 
         this.shadow.innerHTML = 
-        html`
+        /*html*/`
         <style>
             .Profile{
                 height:18%;

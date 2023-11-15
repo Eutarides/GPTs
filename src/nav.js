@@ -9,7 +9,7 @@ class Nav extends HTMLElement {
     render() {
 
         this.shadow.innerHTML = 
-        html`
+        /*html*/`
         <style>
             .Nav{
                 justify-content:space-between;
