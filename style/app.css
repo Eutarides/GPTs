@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'fuente-gpt';
+    src: url('GPTs\fonts\soehne-buch.13189857.woff2') format('woff2'),
+        ('GPTs\fonts\soehne-halbfett.977f1845.woff2') format('woff2'),
+        ('GPTs\fonts\soehne-mono-buch.de677af1.woff2') format('woff2'),
+        ('GPTs\fonts\soehne-buch.13189857.woff2') format('woff2');
+  }
+
 body{
     height:100vh;
     width:156vh;
@@ -107,6 +115,7 @@ aside{
     color:white;
     font-weight:500;
     font-size:1.2rem;
+    font-family: Söhne, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .daily-chats{
