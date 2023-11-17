@@ -1,14 +1,15 @@
 @font-face {
     font-family: 'fuente-gpt';
-    src: url('GPTs\fonts\soehne-buch.13189857.woff2') format('woff2'),
-        ('GPTs\fonts\soehne-halbfett.977f1845.woff2') format('woff2'),
-        ('GPTs\fonts\soehne-mono-buch.de677af1.woff2') format('woff2'),
-        ('GPTs\fonts\soehne-buch.13189857.woff2') format('woff2');
-  }
+    src: url('../fonts/soehne-buch.13189857.woff2') format('woff2'),
+         url('../fonts/soehne-halbfett.977f1845.woff2') format('woff2'),
+         url('../fonts/soehne-mono-buch.de677af1.woff2') format('woff2'),
+         url('../fonts/soehne-buch.13189857.woff2') format('woff2');
+}
+
 
 body{
     height:100vh;
-    width:156vh;
+    width:99vw;
 }
 
 main{
@@ -22,11 +23,12 @@ header{
 }
 
 aside{
-    width:22%;
+    width:18.5%;
     height:100%;
     background-color:black;
     display:flex;
     flex-direction:column;
+    overflow: hidden;
     position:relative;
 }
 
@@ -35,7 +37,7 @@ aside{
     justify-content:space-between;
     Align-items:center;
     width:100%;
-    height:1%;
+    height:2%;
     padding-left:3%;
     padding-top:10%;
     padding-bottom:5%;
@@ -63,8 +65,9 @@ aside{
 
 .new-chat-button h3{
     color:white;
-    font-size:1rem;
+    font-size:0.9rem;
     font-weight:500;
+    font-family:'fuente-gpt';
 }
 
 .sidebar-button{
@@ -96,7 +99,23 @@ aside{
     padding-left:4%;
     padding-right:2%;
     padding-top:5%;
+    overflow-y:scroll;
+    margin-top:6%;
 }
+
+.chat-history::-webkit-scrollbar {
+    width: 10px;
+}
+
+.chat-history::-webkit-scrollbar-track {
+    background: black;
+}
+
+.chat-history::-webkit-scrollbar-thumb {
+    background: rgb(36, 36, 36);
+}
+
+
 
 .daily-history{
     display:flex;
@@ -112,11 +131,10 @@ aside{
 }
 
 .day h3{
-    color:white;
+    color:hsl(0, 0%, 50%);
     font-weight:500;
-    font-size:1.2rem;
-    font-family: Söhne, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
+    font-size:0.75rem;
+    font-family:'fuente-gpt';}
 
 .daily-chats{
     display:flex;
@@ -128,32 +146,15 @@ aside{
     width:100%;
     gap:0.3rem;
     padding-bottom:3%;
-
-    ::-webkit-scrollbar {
-        width: 10px;
-    }
-    
-    ::-webkit-scrollbar-track {
-        background: #f1f1f1;
-    }
-    
-    ::-webkit-scrollbar-thumb {
-        background: #888;
-    }
-    
-    ::-webkit-scrollbar-thumb:hover {
-        background: #555;
-    }
-    
 }
 
 .past-chat-line{
     overflow: hidden;
-    width:100%;
+    width:95%;
     height:1.5rem;
     display: flex;
     flex-direction:row;
-    padding-left:10%;
+    padding-left:5%;
     padding-right:5%;
     align-items: center;
 }
@@ -166,19 +167,22 @@ aside{
 
 .message-svg svg{
     fill:white;
-    width:50%;
+    width: 1rem;
 }
 
-.mast-chat-title{
-    width:70%;
+.past-chat-title{
+    width:80%;
     overflow:hidden;
 }
 
 .past-chat-title h3{
     color:white;
-    font-size:1rem;
+    font-size:0.85rem;
     white-space: nowrap;
     font-weight:400;
+    font-family:'fuente-gpt';
+    width:100%;
+    overflow: hidden;
 }   
 
 .settings-box{
@@ -216,7 +220,9 @@ aside{
 .upgrade h3{
     color:white;
     padding-left:8%;
-    font-weight:400;
+    font-weight:600;
+    font-family:'fuente-gpt';
+    font-size:0.9rem;
 
 }
 
@@ -243,7 +249,9 @@ aside{
 
 .username h3{
     color:white;
-    font-weight:400;
+    font-weight:600;
+    font-family:'fuente-gpt';
+    font-size:0.9rem;
 }
 
 .dots{
@@ -263,6 +271,9 @@ aside{
     height:100%;
     display:flex;
     position:relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
 
 }
 
@@ -271,41 +282,56 @@ aside{
     height:20%;
     position:absolute;
     top:40%;
-    left:55%;
+    left:45%;
 }
 
 .water-mark h1{
-    color:grey;
+    color:hsl(0, 0%, 83%);
     font-size: 2rem;
+    font-family:'fuente-gpt';
+}
+
+.chat-interaction{
+    width:55%;
+    height:21%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:2%;
 }
 
 .hint-menu{
-    position:absolute;
-    width:60%;
-    height:10%;
+    width:98%;
+    height:50%;
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap:0.6rem;
-    bottom:13%;
-    left:30%;
 }
 
 
 .hint{
-    border:solid grey 1px;
-    border-radius:5px;
+    border:solid hsl(0, 0%, 83%) 1px;
+    border-radius:10px;
     width:49%;
     height:49%;
     display:flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-top:0.5%;
+    padding-bottom:0.5%;
 }
 
 .hint-title{
     width:90%;
     height:40%;
-    font-size:0.7rem;
+    padding-left:2%;
+}
+
+.hint-title h3{
+    font-size:1rem;
+    font-family:'fuente-gpt';
 }
 
 .hint-text{
@@ -314,50 +340,52 @@ aside{
 }
 
 .hint-text h3{
-    color:grey;
+    color:hsl(0, 0%, 83%);
     font-size:0.9rem;
+    font-family:'fuente-gpt';
+    padding-left:2%;
+    font-weight:500;
 }
 
 .text-bar{
-    width:60%;
-    height:5%;
-    position:relative;
+    width:100%;
+    height:30%;
     display:flex;
-    background-color:pink;
-    top:90%;
-    left:30%;
+    justify-content: space-between;
+    position:relative;
+
 }
 
 .text-bar input{
-    width:100%;
-    height:100%;
     color:grey;
     box-shadow: #888;
-    position:absolute;
-    border-radius:10px;
-    border:solid grey 1px;
+    border-radius:15px;
+    border:solid hsl(0, 0%, 83%) 1px;
     display:flex;
     align-items: center;
+    font-family:'fuente-gpt';
+    width:100%;
 }
 
 .send-text{
-    position:absolute;
     right:1%;
     width:5%;
-    bottom:0%;
+    position:absolute;
+    right:1%;
+    top:15%;
 }
 
 .send-text svg{
-    fill:grey;
+    fill:rgb(212, 212, 212);
 }
 
 .question-mark{
     position:absolute;
-    right:-15%;
-    bottom:4.5%;
-    width:4%;
-    height:5%;
-    border:solid grey 1px;
+    right:0.5%;
+    bottom:2%;
+    width:1.5%;
+    height:2.3%;
+    border:solid hsl(0, 0%, 83%) 1px;
     border-radius:25px;
     align-items:center;
     display: flex;
