@@ -292,7 +292,7 @@ aside{
 }
 
 .chat-interaction{
-    width:55%;
+    width:54.5%;
     height:21%;
     display:flex;
     flex-direction: column;
@@ -318,7 +318,7 @@ aside{
     height:49%;
     display:flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-top:0.5%;
     padding-bottom:0.5%;
 }
@@ -330,8 +330,9 @@ aside{
 }
 
 .hint-title h3{
-    font-size:1rem;
+    font-size:0.9rem;
     font-family:'fuente-gpt';
+    font-weight: 500;
 }
 
 .hint-text{
