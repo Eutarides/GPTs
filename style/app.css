@@ -396,3 +396,8 @@ aside{
 .question-mark svg{
     width:50%;
 }
+
+.upgrade-modal{
+    display:none;
+    z-index: 1000;
+}
