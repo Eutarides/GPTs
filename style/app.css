@@ -274,6 +274,7 @@ aside{
     flex-direction: column;
     align-items: center;
     justify-content: end;
+    position:relative;
 
 }
 
@@ -398,6 +399,61 @@ aside{
 }
 
 .upgrade-modal{
-    display:none;
     z-index: 1000;
+    position:absolute;
+    left:31%;
+    top:23%;
+    width:39%;
+    height:54%;
+    background-color: white;
+    border-radius: 5px;
+    display:none;
+    border:solid black 1px;
+    flex-direction: column;
 }
+
+.upgrade-modal.active{
+    display:flex;
+}
+
+.upgrade-modal-title{
+    height:17%;
+    display:flex;
+    justify-content: space-between;
+    padding:0% 5%;
+    align-items: center;
+}
+
+.upgrade-modal-title h3{
+    font-family: 'fuente-gpt';
+    font-size: 1.3rem;
+}
+
+.upgrade-modal-title svg{
+    width:4%;
+}
+
+
+.upgrade-modal-main{
+    height:66%;
+    border-top:solid black 1px;
+    border-bottom:solid black 1px;
+    display:flex;
+}
+
+.upgrade-element{
+    width:50%;
+    height:100%;
+    background-color: antiquewhite;
+}
+
+.upgrade-element.free{
+    border-right:solid black 1px;
+    background-color: blueviolet;
+}
+
+.upgrade-modal-foot{
+    height:17%;
+}
+
+
